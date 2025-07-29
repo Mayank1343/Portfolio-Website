@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+    background-color: beige;
+    font-family: Lora, sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+#name{
+    font-size: 77px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+#topnav{
+    display: flex;
+    border: 2px solid green;
+    height: 35px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 450px;
+    margin-right: 450px;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+}
+
+#about{
+    border: 2px solid red;
+    text-align: center;
+    margin: 50px 300px;
+    font-size: 120%;
+}
+
+#about p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#socialProfile{
+    border: 2px solid red;
+    text-align: center;
+    margin: 50px 300px;
+    font-size: 120%;
+}
+
+#socialnav{
+ display: flex;
+ justify-content: space-evenly;
+}
+
+#projects{
+    text-align: center;
+    border: 2px solid red;
+    margin: 0 200px;
+}
+
+#projectnav{
+    display: flex;
+}
+
+
+#certi{
+    text-align: center;
+    border: 2px solid red;
+    margin:50px 300px;
+}
+
+#certi-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
