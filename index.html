@@ -5,25 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mayank Sharma</title>
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/d1a47c77bc.js" crossorigin="anonymous">
+
+</script>
+
+<script
+  src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"
+  type="module">
+</script>
+
 </head>
 <body>
+
+   
+
+    <!-- 
+    <div class="bg-text">
+    <h1>Mayank</h1>
+    <h1>Sharma</h1>
+    <p>Aspiring full stack developer</p>
+    </div>
+     -->
+
+    
     <header>
-        <h1 id="name">MAYANK SHARMA</h1>
         <nav id="topnav">
                 <a href="#about">About</a>
                 <a href="#socialProfile">Social Profiles</a>
                 <a href="#projects">Projects</a>
                 <a href="#certi">Certifications</a>
-                <a href="">Resume</a>       
+                <a id="resumetext" href="https://drive.google.com/file/d/1Y39zO2rpH1dntiCioviALb0-BVIYRkAS/view?usp=sharing" target="_blank">Resume</a>       
         </nav>
+         <h1 id="name">MAYANK SHARMA</h1>
     </header>
 
     <br>
 
-    <section id="about">
+     <section class="about">
+
+    <div class="animation1">
+    <dotlottie-wc src="https://lottie.host/b0ae5885-cd7e-49b5-b737-416783e98b8f/K4dvTFAkaZ.lottie"
+  style="width: 300px;height: 300px"
+  speed="1"
+  autoplay
+  loop>
+</dotlottie-wc>
+</div>
+       
+<div class="abttext">
         <h2>About Me</h2>
             <p>Hi, I’m Mayank Sharma, a B.Tech Computer Science student from Dehradun, 
                 India — passionate about building dynamic, scalable, and user-centric web applications.
@@ -34,23 +68,24 @@
                all while diving deeper into the world of full-stack development and cloud technologies.
                <br>
             </p>
+            </div>
     </section>
 
     <br>
 
-    <section id="socialProfile">
-        <h2>Social Profile</h2>
+    <section class="socialProfile">
+        <!--<h2>Social Profile</h2>-->
              <nav id="socialnav">
-                    <a href="www.linkedin.com/in/mayanksharmaa13">LinkedIn</a>
-                    <a href="https://github.com/Mayank1343">GitHub</a>
-                    <a href="mayanksharma@gmail.com">Email</a>
-                    <a href="">Resume</a>
+                    <a href="www.linkedin.com/in/mayanksharmaa13"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/Mayank1343"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="mayanksharma@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                    <a href="https://drive.google.com/file/d/1Y39zO2rpH1dntiCioviALb0-BVIYRkAS/view?usp=sharing" target="_blank"><i class="fa-solid fa-user"></i> Resume</a>
             </nav>
     </section>
 
     <br>
 
-    <section id="projects">
+    <!--<section id="projects">
         <h2>Projects</h2>
         <nav id="projectnav">
             <div id="projectinfo">
@@ -69,15 +104,62 @@
                     on a benchmark dataset.</p>
             </div>
         </nav>
-    </section>
+    </section>-->
+    <section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-container">
+    
+    <div class="project-slide">
+      <div class="project-left">
+        <h3>SQL Query Parser</h3>
+        <p>Tech Stack: C, Flex, Bison, Python (GUI)</p>
+        <p>Created using compiler design tools with a user-friendly Python Tkinter GUI.</p>
+      </div>
+      <div class="project-right">
+        <img src="project1.jpg" alt="Project Thumbnail" />
+      </div>
+    </div>
+
+    <div class="project-slide">
+      <div class="project-left">
+        <h3>Portfolio Website</h3>
+        <p>Tech Stack: HTML, CSS, JavaScript</p>
+        <p>A dynamic personal portfolio with animation, music toggle, and responsive UI.</p>
+      </div>
+      <div class="project-right">
+        <img src="project2.jpg" alt="Portfolio Screenshot" />
+      </div>
+    </div>
+
+    <!-- Add more slides as needed -->
+  </div>
+</section>
 
     <br>
 
     <section id="certi">
         <h2>Certifications</h2>
         <div id="certi-div">
-     <h4>Swayam|GoogleCloudComputingFoundations</h4>
-     <h4>Coursera | Python for Data Science, AI & Development from IBM</h4>
+            <a href="https://drive.google.com/file/d/18oaLkcyY--IOd55kb-ngtOLKFrqNtsiJ/view?usp=sharing" target="_blank" class="cert-card">
+                <img src="certi1.jpg" alt="Certificate Thumbnail">
+     <h4>Google Cloud Computing Foundations</h4>
+     <p>Issued by: Swayam</p>
+     <p>Date: Aug-Oct 2023</p>
+            </a>
+           
+         <a href="https://www.coursera.org/account/accomplishments/verify/YZXBH16VREK7" target="_blank" class="cert-card">
+            <img src="certi2.jpg" alt="Certificate Thumbnail">
+            <h4>Python for Data Science, AI & Development from IBM</h4>
+     <p>Issued by: Coursera</p>
+     <p>Date: Apr 2025</p>
+            </a>
+
+            <a href="https://hyperstack.id/credential/1808ee66-8d33-47eb-bff5-ac86a35da57f" target="_blank" class="cert-card">
+            <img src="certi3.jpg" alt="Certificate Thumbnail">
+            <h4>Workshop on Drone technologies by Agrob</h4>
+     <p>Issued by: Cognizance, IIT Roorkee</p>
+     <p>Date: Apr 2023</p>
+            </a>
         </div>
     </section>
 </body>
