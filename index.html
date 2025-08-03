@@ -24,14 +24,6 @@
 
    
 
-    <!-- 
-    <div class="bg-text">
-    <h1>Mayank</h1>
-    <h1>Sharma</h1>
-    <p>Aspiring full stack developer</p>
-    </div>
-     -->
-
     
     <header>
         <nav id="topnav">
@@ -46,7 +38,7 @@
 
     <br>
 
-     <section class="about">
+     <section id="about">
 
     <div class="animation1">
     <dotlottie-wc src="https://lottie.host/b0ae5885-cd7e-49b5-b737-416783e98b8f/K4dvTFAkaZ.lottie"
@@ -73,7 +65,7 @@
 
     <br>
 
-    <section class="socialProfile">
+    <section id="socialProfile">
         <!--<h2>Social Profile</h2>-->
              <nav id="socialnav">
                     <a href="www.linkedin.com/in/mayanksharmaa13"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
@@ -105,32 +97,50 @@
             </div>
         </nav>
     </section>-->
+
     <section id="projects">
   <h2 class="section-title">Projects</h2>
-  <div class="projects-container">
-    
-    <div class="project-slide">
+   <h4>Where imagination meets implementation.</h4>
+
+  <div class="projects-container"> 
+
+    <div class="project-box">
       <div class="project-left">
         <h3>SQL Query Parser</h3>
         <p>Tech Stack: C, Flex, Bison, Python (GUI)</p>
-        <p>Created using compiler design tools with a user-friendly Python Tkinter GUI.</p>
+        <p>Developed a SQL Query Parser using compiler construction tools Flex and Bison in C language,
+           integrated with a Python Tkinter GUI. The parser recognizes and validates simplified SQL queries,
+            demonstrating lexical analysis and parsing techniques in compiler design with a user-friendly
+             interface.</p>
       </div>
+      
+
       <div class="project-right">
-        <img src="project1.jpg" alt="Project Thumbnail" />
+        <img src="A1.png" alt="Project image 1" />
+        <img src="A2.png" alt="Project images 2" />
+        <img src="A3.png" alt="Project images 3" />
+         <img src="A4.png" alt="Project images 4" />
       </div>
     </div>
 
-    <div class="project-slide">
+   <div class="project-box">
       <div class="project-left">
-        <h3>Portfolio Website</h3>
-        <p>Tech Stack: HTML, CSS, JavaScript</p>
-        <p>A dynamic personal portfolio with animation, music toggle, and responsive UI.</p>
+        <h3>Personal Portfolio Website</h3>
+        <p>Tech Stack: HTML, CSS, JavaScript, Lottie, Responsive Design</p>
+        <p>A fully responsive, interactive web portfolio built to showcase my projects, 
+          certifications, and creativity. Features dynamic scroll-based transitions, Lottie animations, 
+          and custom CSS/JS effects.</p>
       </div>
+      
+
       <div class="project-right">
-        <img src="project2.jpg" alt="Portfolio Screenshot" />
+        <img src="A1.png" alt="Project image 1" />
+        <img src="A2.png" alt="Project images 2" />
+        <img src="A3.png" alt="Project images 3" />
+         <img src="A4.png" alt="Project images 4" />
       </div>
     </div>
-
+  
     <!-- Add more slides as needed -->
   </div>
 </section>
@@ -139,6 +149,7 @@
 
     <section id="certi">
         <h2>Certifications</h2>
+        <h3>Steps I’ve climbed on my learning ladder.</h3>
         <div id="certi-div">
             <a href="https://drive.google.com/file/d/18oaLkcyY--IOd55kb-ngtOLKFrqNtsiJ/view?usp=sharing" target="_blank" class="cert-card">
                 <img src="certi1.jpg" alt="Certificate Thumbnail">
@@ -162,5 +173,10 @@
             </a>
         </div>
     </section>
+
+    <img src="bee.png" id="bee" alt="Flying Bee" />
+<audio id="buzz-sound" src="buzz.mp3"></audio>
+
+    <script src="script.js"></script>
 </body>
 </html>

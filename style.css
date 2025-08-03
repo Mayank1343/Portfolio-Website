@@ -5,6 +5,7 @@
 body{
     background-color: #000b0f;
     font-family: Lora, sans-serif;
+    padding-top: 30px; /* Push page content below the nav */
 }
 
 
@@ -43,19 +44,60 @@ header{
 }
 
 #name{
-    font-size: 85px;
+    font-size: 7rem;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    margin-top: 75px;
+    margin-top: 190px;
+
+
+   /* display: inline-block;
+    border-right: 5px yellow;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    typing 2s,
+    cursor 0.4 step-end infinite alternate;*/
+}
+
+/*
+@keyframes typing{
+from {
+  width: 0;
+}
+}
+
+@keyframes cursor{
+  50% {
+    border-color: transparent;
+  }
+}
+*/
+
+#name {
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* For better browser support */
+  background-clip: text;
+  color: transparent;
 }
 
 #topnav{
+
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 37%;
+    background-color: #000b0f;
+    z-index: 1000;
+  
     display: flex;
     color: white;
-    border: 2px solid yellow;
+    border: 1.6px solid yellow;
     height: 55px;
     justify-content: space-evenly;
     align-items: center;
@@ -63,6 +105,7 @@ header{
     margin-top: 60px;
     margin-left: 450px;
     margin-right: 450px;
+  
 }
 
 
@@ -77,6 +120,7 @@ nav a:hover{
   transform: scale(1.05);
 }
 
+/*
 #resumetext{
    border: 2px solid yellow;
   border-radius: 20px;
@@ -86,7 +130,32 @@ nav a:hover{
   background-size: 300% 300%;
   animation: gradientMove 4s ease infinite;
 }
+  */
 
+         #resumetext {
+          background-image: linear-gradient(to right, #FF8008 0%, #FFC837  51%, #FF8008  100%);
+        }
+         #resumetext {
+          border: 1.7px solid yellow;
+            margin: 0;
+            padding: 7px 19px;
+            text-align: center;
+            justify-content: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 300% 300%;
+            color: white;            
+            border-radius: 20px;
+            display: block;
+          }
+
+          #resumetext:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+/*
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;
@@ -97,12 +166,12 @@ nav a:hover{
   100% {
     background-position: 0% 50%;
   }
-}
+}*/
 
 
-.about{
+#about{
     /*border: 2px solid yellow;*/
-    margin: 20px 50px auto 50px;
+    margin: -25px 50px auto 50px;
     width: 1300px;
     font-size: 120%;
     color: white;
@@ -130,13 +199,13 @@ nav a:hover{
   justify-content: start;
 }
 
-.about p{
+#about p{
   /*border: 2px solid blue;*/
     font-family: 'Times New Roman', Times, serif;
   width: 700px;
 }
 
-.socialProfile{
+#socialProfile{
     /*border: 2px solid yellow;*/
     text-align: center;
     margin: 100px 300px;
@@ -150,77 +219,104 @@ nav a:hover{
 }
 
 #projects {
-  border: 2px solid yellow;
-  padding: 40px;
-  color: white;
+ color: white;
+ /*border: 2px solid red;*/
 }
 
 .section-title {
   font-size: 50px;
-  text-align: center;
+  padding-left: 3%;
+  padding-right: 100px;
   margin-bottom: 30px;
+  margin-top: 0;
+ /* border: 2px solid red;*/
 }
 
-.horizontal-scroll-container {
+#projects h4{
+  padding-left: 3%;
+  margin-top: -1%;
+}
+
+.projects-container{
   display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 30px;
-  padding: 20px;
-  scroll-behavior: smooth;
+  flex-direction: column;
+  height: 550px;
+  /* border: 2px solid yellow; */
+  border-radius: 20px;
+  margin: 0 35px;
+  padding: 40px;
+   background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  color: white;
+
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 3rem;
+  padding-right: 10px;
+
+   /* Hide scrollbar for Chrome, Safari and Opera */
+    scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+
+.projects-scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.project-box{
+ /* border: 2px solid red; */
+ display: flex;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.project-left h3{
+   /* border: 2px solid blue; */
+ font-size: 5rem;
+
+ margin-top: 0;
+}
+
+.project-left p{
+  font-size: 1.1rem;
+}
+
+.project-right{
+ /* border: 2px solid blue; */
+  display: flex;
+  align-items: center;
 }
 
 #projects img{
-  width: 110px;
-  height: auto;
+  height: 150px;
+  width: 170px;
+  border-radius: 10px;
 }
 
-.project-card {
-  flex: 0 0 300px;
-  background: linear-gradient(135deg, #1e1e1e, #292929);
-  padding: 20px;
-  border-radius: 15px;
-  scroll-snap-align: center;
-  box-shadow: 0 0 20px rgba(0,255,255,0.2);
-  transition: transform 0.3s;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-}
-
-/*#projects{
-    text-align: center;
-    border: 2px solid yellow;
-    margin: 0 200px;
-    color: white;
-}
-#projects h2{
-  display: flex;
-    font-size: 50px;
-    justify-content: end;
-    padding-right: 50px;
-  }
-
-#projectnav{
-    display: flex;
-}*/
 
 
 #certi{
   /* border: 2px solid yellow;*/
     text-align: center;
-    margin:50px 300px;
+    margin:110px 300px;
     color: white;
 }
 
 #certi h2{
     font-size: 60px;
 }
+#certi h3{
+  margin-top: -4%;
+  margin-bottom: 7%;
+}
 
 #certi-div{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -253,6 +349,37 @@ nav a:hover{
   height: 150px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
+  opacity: 100%;
+}
+
+.cert-card img:hover {
+  opacity: 65%;
+}
+
+
+#bee {
+  position: fixed;
+  width: 40px;
+  z-index: 9999;
+  transition: transform 1s linear, top 1s linear, left 1s linear;
+  pointer-events: auto;
+}
+
+.bee-dead {
+  animation: fallToBottom 1.5s forwards ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes fallToBottom {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 100vh;
+    opacity: 0;
+    transform: rotate(360deg);
+  }
 }
 
 
