@@ -1,4 +1,6 @@
 * {
+  padding: 0%;
+  margin: 0%;
   box-sizing: border-box;
 }
 
@@ -6,6 +8,8 @@ body{
     background-color: #000b0f;
     font-family: Lora, sans-serif;
     padding-top: 30px; /* Push page content below the nav */
+    width: 100%;
+    height: 100vh;
 }
 
 
@@ -38,43 +42,21 @@ body{
   -webkit-text-stroke: 1px white;
 }
 
-
-header{
-    text-align: center;
+.head{
+      text-align: center;
 }
 
 #name{
-    font-size: 7rem;
+    font-size: 6.2rem;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    margin-top: 190px;
-
-
-   /* display: inline-block;
-    border-right: 5px yellow;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: 
-    typing 2s,
-    cursor 0.4 step-end infinite alternate;*/
+    margin-top: 170px;
+    margin-left: 8.7%;
 }
 
-/*
-@keyframes typing{
-from {
-  width: 0;
-}
-}
-
-@keyframes cursor{
-  50% {
-    border-color: transparent;
-  }
-}
-*/
 
 #name {
   background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
@@ -84,6 +66,20 @@ from {
   /* For better browser support */
   background-clip: text;
   color: transparent;
+}
+
+.text-wrapper{
+  /*border: 2px solid yellow;*/
+ text-align: centre;
+ color: white;
+ font-size: 0.7rem;
+ padding-left: 55%;
+}
+
+.change-text{
+ /* border: 2px solid red;*/
+  color: white;
+  letter-spacing: 0px;
 }
 
 #topnav{
@@ -171,8 +167,8 @@ nav a:hover{
 
 #about{
     /*border: 2px solid yellow;*/
-    margin: -25px 50px auto 50px;
-    width: 1300px;
+    margin: 40px 50px auto 50px;
+    width: 100%;
     font-size: 120%;
     color: white;
     display: flex;
@@ -200,9 +196,11 @@ nav a:hover{
 }
 
 #about p{
-  /*border: 2px solid blue;*/
+ /* border: 2px solid blue;*/
     font-family: 'Times New Roman', Times, serif;
   width: 700px;
+  margin-top: 5%;
+  font-size: 1.2rem;
 }
 
 #socialProfile{
@@ -240,14 +238,13 @@ nav a:hover{
 .projects-container{
   display: flex;
   flex-direction: column;
-  height: 550px;
+  height: 500px;
   /* border: 2px solid yellow; */
   border-radius: 20px;
   margin: 0 35px;
   padding: 40px;
    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
   color: white;
-
   flex: 1;
   overflow-y: auto;
   margin-top: 3rem;
@@ -268,34 +265,79 @@ nav a:hover{
 }
 
 .project-box{
- /* border: 2px solid red; */
- display: flex;
-  height: 100vh;
+ /* border: 2px solid aquamarine; */
+  display: flex;
   padding: 2rem;
+  margin-bottom: 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-left{
+  max-width: 700px;
+  margin-left: -10%;
+}
+
+.project-head{
+/*    border: 2px solid blue; */
 }
 
 .project-left h3{
-   /* border: 2px solid blue; */
  font-size: 5rem;
-
  margin-top: 0;
+ display: flex;
+ max-width: 60%;
+}
+
+.project-desc{
+/*   border: 2px solid yellow; */
+  margin-top: 7%;
+}
+
+.techStack{
+  margin-bottom: 5%;
 }
 
 .project-left p{
   font-size: 1.1rem;
 }
 
+.project-head{
+  display: flex;
+  gap: 10px;
+}
+
+.project-head h3{
+margin: 0;
+  padding: 0;
+}
+
+.project-logo img{
+  width: 50px !important;
+  height: 50px !important;
+  margin-left: 400% !important;
+    margin-top: 40% !important;
+  object-fit: contain;
+ /* border: 2px solid yellow; */
+}
+
+
 .project-right{
  /* border: 2px solid blue; */
-  display: flex;
-  align-items: center;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(2,1fr);
+   grid-template-rows: repeat(2,1fr);
+   margin-left: 5%;
+   margin-right: -5%;
 }
 
 #projects img{
-  height: 150px;
-  width: 170px;
+  height: 180px;
+  width: 200px;
   border-radius: 10px;
 }
+
 
 
 
@@ -310,7 +352,6 @@ nav a:hover{
     font-size: 60px;
 }
 #certi h3{
-  margin-top: -4%;
   margin-bottom: 7%;
 }
 

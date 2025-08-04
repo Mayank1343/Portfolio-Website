@@ -1,4 +1,4 @@
-const bee = document.getElementById("bee");
+/*const bee = document.getElementById("bee");
 const buzz = new Audio("buzz.mp3"); // Replace with your actual sound file path
 
 let isDead = false;
@@ -74,3 +74,18 @@ bee.addEventListener("click", () => {
 
 // Initial start
 spawnBee();
+
+*/
+
+
+// TYPEWRITER EFFECT
+
+  var typed= new Typed(".change-text",{
+    strings: ["Full Stack Developer!","Software Engineer!","Cloud Engineer!","DevOps Engineer!"],
+  typeSpeed: 70, 
+  backSpeed: 50,
+  loop: true,
+  showCursor: false
+  })
+
+  

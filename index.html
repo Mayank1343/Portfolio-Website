@@ -25,7 +25,7 @@
    
 
     
-    <header>
+    <header class="head">
         <nav id="topnav">
                 <a href="#about">About</a>
                 <a href="#socialProfile">Social Profiles</a>
@@ -34,8 +34,12 @@
                 <a id="resumetext" href="https://drive.google.com/file/d/1Y39zO2rpH1dntiCioviALb0-BVIYRkAS/view?usp=sharing" target="_blank">Resume</a>       
         </nav>
          <h1 id="name">MAYANK SHARMA</h1>
-    </header>
-
+        </header>
+   
+        <div class="text-wrapper">
+            <h1>Aspiring <span class="change-text"></span></h1> 
+        </div>
+       
     <br>
 
      <section id="about">
@@ -51,7 +55,8 @@
        
 <div class="abttext">
         <h2>About Me</h2>
-            <p>Hi, I’m Mayank Sharma, a B.Tech Computer Science student from Dehradun, 
+            <p class="aboutDesc">
+              A B.Tech Computer Science student from Dehradun, 
                 India — passionate about building dynamic, scalable, and user-centric web applications.
                 <br>
                With a strong foundation in HTML, CSS, JavaScript, and React, 
@@ -59,6 +64,7 @@
                My goal is to bridge the gap between aesthetic design and efficient functionality, 
                all while diving deeper into the world of full-stack development and cloud technologies.
                <br>
+            
             </p>
             </div>
     </section>
@@ -106,12 +112,26 @@
 
     <div class="project-box">
       <div class="project-left">
-        <h3>SQL Query Parser</h3>
+        <div class="project-head">
+            <h3>SQL Query Parser</h3>
+          <div class="project-logo">
+            <a href="https://github.com/Mayank1343/SQL-Query-Parser.git">
+                 <img src="github.png" alt="GitHub Logo">
+                </a>
+          </div>
+        </div>
+        
+           <div class="project-desc">
+            <div class="techStack">
         <p>Tech Stack: C, Flex, Bison, Python (GUI)</p>
+        </div>
+        <div class="techExplained">
         <p>Developed a SQL Query Parser using compiler construction tools Flex and Bison in C language,
            integrated with a Python Tkinter GUI. The parser recognizes and validates simplified SQL queries,
             demonstrating lexical analysis and parsing techniques in compiler design with a user-friendly
              interface.</p>
+             </div>
+             </div>
       </div>
       
 
@@ -123,13 +143,29 @@
       </div>
     </div>
 
-   <div class="project-box">
+
+
+    <div class="project-box">
       <div class="project-left">
-        <h3>Personal Portfolio Website</h3>
+        <div class="project-head">
+            <h3>Personal Portfolio Website</h3>
+          <div class="project-logo">
+            <a href="https://github.com/Mayank1343/Portfolio-Website.git">
+                 <img src="github.png" alt="GitHub Logo">
+                </a>
+          </div>
+        </div>
+        
+           <div class="project-desc">
+            <div class="techStack">
         <p>Tech Stack: HTML, CSS, JavaScript, Lottie, Responsive Design</p>
+        </div>
+        <div class="techExplained">
         <p>A fully responsive, interactive web portfolio built to showcase my projects, 
           certifications, and creativity. Features dynamic scroll-based transitions, Lottie animations, 
           and custom CSS/JS effects.</p>
+             </div>
+             </div>
       </div>
       
 
@@ -174,9 +210,19 @@
         </div>
     </section>
 
+<footer>
+  
+</footer>
+
+
+
+
     <img src="bee.png" id="bee" alt="Flying Bee" />
 <audio id="buzz-sound" src="buzz.mp3"></audio>
 
-    <script src="script.js"></script>
+  
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+       <script src="script.js"></script>
+
 </body>
 </html>
