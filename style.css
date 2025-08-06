@@ -1,6 +1,9 @@
+@import url("https://db.onlinewebfonts.com/c/6d2a9bcf540150d9e12e88c4b0c5c305?family=Media+Sans+Extended");
+
+
 * {
+    margin: 0%;
   padding: 0%;
-  margin: 0%;
   box-sizing: border-box;
 }
 
@@ -8,7 +11,7 @@ body{
     background-color: #000b0f;
     font-family: Lora, sans-serif;
     padding-top: 30px; /* Push page content below the nav */
-    width: 100%;
+    width: 100wh;
     height: 100vh;
 }
 
@@ -17,7 +20,7 @@ body{
   position: fixed;
    z-index: -999;
    pointer-events: none;
-  top: 20%;
+  /* top: 20%; */
   left: 5%;
   z-index: -1;
   color: white;
@@ -46,44 +49,8 @@ body{
       text-align: center;
 }
 
-#name{
-    font-size: 6.2rem;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    margin-top: 170px;
-    margin-left: 8.7%;
-}
-
-
-#name {
-  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  /* For better browser support */
-  background-clip: text;
-  color: transparent;
-}
-
-.text-wrapper{
-  /*border: 2px solid yellow;*/
- text-align: centre;
- color: white;
- font-size: 0.7rem;
- padding-left: 55%;
-}
-
-.change-text{
- /* border: 2px solid red;*/
-  color: white;
-  letter-spacing: 0px;
-}
-
 #topnav{
-
+    border: 1.6px solid yellow;
   position: fixed;
     top: 0;
     left: 0;
@@ -93,46 +60,34 @@ body{
   
     display: flex;
     color: white;
-    border: 1.6px solid yellow;
+
     height: 55px;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 18px;
     margin-top: 60px;
     margin-left: 450px;
     margin-right: 450px;
   
 }
 
-
-
-nav a{
+#topnav a{
   text-decoration: none;
   color: white;
+  transform: color 0.1s;
   transition: all 0.3s ease;
 }
 
-nav a:hover{
+#topnav a:hover{
   transform: scale(1.05);
+  color: #ECD06F;
 }
 
-/*
-#resumetext{
-   border: 2px solid yellow;
-  border-radius: 20px;
-  padding: 6px 20px;
-  margin: 0;
-  background: linear-gradient(-25deg, #ff6b6b, #f7b733, #4ecdc4, #556270);
-  background-size: 300% 300%;
-  animation: gradientMove 4s ease infinite;
-}
-  */
-
-         #resumetext {
+#resumetext {
           background-image: linear-gradient(to right, #FF8008 0%, #FFC837  51%, #FF8008  100%);
         }
          #resumetext {
-          border: 1.7px solid yellow;
+         /* border: 1.7px solid yellow; */
             margin: 0;
             padding: 7px 19px;
             text-align: center;
@@ -149,40 +104,328 @@ nav a:hover{
             background-position: right center; /* change the direction of the change here */
             color: #fff;
             text-decoration: none;
-          }
-         
-/*
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
+}
+
+
+.hero{
+ /*border: 2px solid blue;*/
+padding-bottom: 5%;
+display: flex;
+flex-direction: column;
+background-color: black;
+height: 100vh;
+margin-top: -2%;
+padding-top: 0%;
+  border: 4px solid red;
+position: relative;
+}
+
+
+#name1{
+ /* border: 2px solid red;*/
+    font-size: 1.2rem;
+    font-family: "Space Grotesk";
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: absolute;
+    margin-left: 31%;
+    margin-top: 19.9%;
+    
+   /*  background-image: linear-gradient( 135deg, #3C8CE7 10%, #00EAFF 100%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   background-color: rgb(255, 255, 255);
+  /* For better browser support */
+  background-clip: text;
+  color: transparent;
+}
+
+#name2, #name3, #name4{
+
+    font-size: 3rem;
+    font-family: "Media Sans Extended", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+   text-align: center;
+    /* background-image: linear-gradient( 135deg, #3C8CE7 10%, #00EAFF 100%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   background-color: rgb(255, 255, 255);
+  /* For better browser support */
+  background-clip: text;
+  color: transparent;
+   position: absolute;
+ 
+}
+
+#name2{
+   margin-top: 17.95%;
+   margin-left: 40%;
+}
+
+#name3{
+  font-size: 1.2rem;
+   margin-top: 25%;
+   margin-left: 35%;
+    font-family: "Space Grotesk";
+    font-weight: 400;
+}
+
+#name4{
+  font-size: 6.7rem;
+   margin-top: 10%;
+   margin-left: 13.5%;
+}
+
+.heroArc{
+  position: relative;
+  border: 2px solid red;
+  background-color: white;
+  width: 80%;
+  height: 110vh;
+  border-radius: 0 200px 200px 0;
+  margin-top: 22%;
+}
+
+
+
+.text-wrapper{
+ /* border: 2px solid yellow;*/
+ text-align: centre;
+ color: rgb(0, 0, 0);
+ font-size: 0.7rem;
+ padding-left: 55%;
+}
+
+.change-text{
+ /*border: 2px solid red;*/
+  color: rgb(0, 0, 0);
+  letter-spacing: 0px;
+}
+
+                                                /* Hero Button */
+
+.heroButton{
+  display: flex;
+  justify-content: center;
+  padding-top: 6%;
+  display: flex;
+}
+
+.heroButton a{
+    text-decoration: none;
+}
+
+
+/* From Uiverse.io by MuhammadHasann */ 
+.button {
+  --black-700: hsla(0 0% 12% / 1);
+  --border_radius: 9999px;
+  --transtion: 0.3s ease-in-out;
+  --offset: 2px;
+
+  cursor: pointer;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  transform-origin: center;
+
+  padding: 1rem 2rem;
+  background-color: transparent;
+
+  border: none;
+  border-radius: var(--border_radius);
+  transform: scale(calc(1 + (var(--active, 0) * 0.1)));
+
+  transition: transform var(--transtion);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-700);
+
+  border-radius: var(--border_radius);
+  box-shadow: inset 0 0.5px hsl(0, 0%, 100%), inset 0 -1px 2px 0 hsl(0, 0%, 0%),
+    0px 4px 10px -4px hsla(0 0% 0% / calc(1 - var(--active, 0))),
+    0 0 0 calc(var(--active, 0) * 0.375rem) hsl(260 97% 50% / 0.75);
+
+  transition: all var(--transtion);
+  z-index: 0;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  height: 100%;
+  background-color: hsla(260 97% 61% / 0.75);
+  background-image: radial-gradient(
+      at 51% 89%,
+      hsla(266, 45%, 74%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 100% 100%, hsla(266, 36%, 60%, 1) 0px, transparent 50%),
+    radial-gradient(at 22% 91%, hsla(266, 36%, 60%, 1) 0px, transparent 50%);
+  background-position: top;
+
+  opacity: var(--active, 0);
+  border-radius: var(--border_radius);
+  transition: opacity var(--transtion);
+  z-index: 2;
+}
+
+.button:is(:hover, :focus-visible) {
+  --active: 1;
+}
+.button:active {
+  transform: scale(1);
+}
+
+.button .dots_border {
+  --size_border: calc(100% + 2px);
+
+  overflow: hidden;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: var(--size_border);
+  height: var(--size_border);
+  background-color: transparent;
+
+  border-radius: var(--border_radius);
+  z-index: -10;
+}
+
+.button .dots_border::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: left;
+  transform: rotate(0deg);
+
+  width: 100%;
+  height: 2rem;
+  background-color: white;
+
+  mask: linear-gradient(transparent 0%, white 120%);
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
   }
-  50% {
-    background-position: 100% 50%;
-  }
+}
+
+.button .sparkle {
+  position: relative;
+  z-index: 10;
+
+  width: 1.75rem;
+}
+
+.button .sparkle .path {
+  fill: currentColor;
+  stroke: currentColor;
+
+  transform-origin: center;
+
+  color: hsl(0, 0%, 100%);
+}
+
+.button:is(:hover, :focus) .sparkle .path {
+  animation: path 1.5s linear 0.5s infinite;
+}
+
+.button .sparkle .path:nth-child(1) {
+  --scale_path_1: 1.2;
+}
+.button .sparkle .path:nth-child(2) {
+  --scale_path_2: 1.2;
+}
+.button .sparkle .path:nth-child(3) {
+  --scale_path_3: 1.2;
+}
+
+@keyframes path {
+  0%,
+  34%,
+  71%,
   100% {
-    background-position: 0% 50%;
+    transform: scale(1);
   }
-}*/
+  17% {
+    transform: scale(var(--scale_path_1, 1));
+  }
+  49% {
+    transform: scale(var(--scale_path_2, 1));
+  }
+  83% {
+    transform: scale(var(--scale_path_3, 1));
+  }
+}
+
+.button .text_button {
+  position: relative;
+  z-index: 10;
+
+  background-image: linear-gradient(
+    90deg,
+    hsla(0 0% 100% / 1) 0%,
+    hsla(0 0% 100% / var(--active, 0)) 120%
+  );
+  background-clip: text;
+  font-size: 1.1rem;
+  color: transparent;
+
+}
+
+
+
 
 
 #about{
-    /*border: 2px solid yellow;*/
-    margin: 40px 50px auto 50px;
+    border: 2px solid yellow;
+    margin: 100px 50px auto 50px;
     width: 100%;
     font-size: 120%;
     color: white;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-
+    margin-top: 28%;
 }
+
+/*
 
 .animation1{
- /* border: 2px solid rgb(255, 0, 0);*/
+ border: 2px solid rgb(255, 0, 0);
   display: flex;
   justify-content: start;
- 
 }
+*/
 
 .abttext{
   flex-direction: column;
@@ -203,17 +446,25 @@ nav a:hover{
   font-size: 1.2rem;
 }
 
+
+
 #socialProfile{
     /*border: 2px solid yellow;*/
     text-align: center;
     margin: 100px 300px;
     font-size: 150%;
     color: white;
+    margin-bottom: 15%;
 }
 
-#socialnav{
+.socialnav{
  display: flex;
  justify-content: space-between;
+}
+
+.socialnav a{
+ color: white;
+ text-decoration: none;
 }
 
 #projects {
@@ -223,7 +474,7 @@ nav a:hover{
 
 .section-title {
   font-size: 50px;
-  padding-left: 3%;
+  padding-left: 11%;
   padding-right: 100px;
   margin-bottom: 30px;
   margin-top: 0;
@@ -231,24 +482,27 @@ nav a:hover{
 }
 
 #projects h4{
-  padding-left: 3%;
+  padding-left: 11%;
   margin-top: -1%;
 }
 
 .projects-container{
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   height: 500px;
-  /* border: 2px solid yellow; */
+  width: 90%;
   border-radius: 20px;
-  margin: 0 35px;
-  padding: 40px;
-   background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+
+ background: #0052D4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   flex: 1;
   overflow-y: auto;
-  margin-top: 3rem;
-  padding-right: 10px;
+  margin: 0 auto;
+   margin-top: 3rem;
+
 
    /* Hide scrollbar for Chrome, Safari and Opera */
     scrollbar-width: none; /* Firefox */
@@ -268,9 +522,10 @@ nav a:hover{
  /* border: 2px solid aquamarine; */
   display: flex;
   padding: 2rem;
-  margin-bottom: 10%;
+
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .project-left{
@@ -319,6 +574,11 @@ margin: 0;
     margin-top: 40% !important;
   object-fit: contain;
  /* border: 2px solid yellow; */
+ transition: all 0.1s ease;
+}
+
+.project-logo img:hover{
+  transform: scale(1.1);
 }
 
 
@@ -326,6 +586,7 @@ margin: 0;
  /* border: 2px solid blue; */
   display: grid;
   gap: 0.5rem;
+  column-gap: 2rem;
   grid-template-columns: repeat(2,1fr);
    grid-template-rows: repeat(2,1fr);
    margin-left: 5%;
@@ -337,6 +598,8 @@ margin: 0;
   width: 200px;
   border-radius: 10px;
 }
+
+
 
 
 
@@ -396,6 +659,196 @@ margin: 0;
 .cert-card img:hover {
   opacity: 65%;
 }
+
+
+.base{
+   /* border: 2px solid greenyellow; */
+    height: 80vh;
+  background: #0052D4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border-radius: 5%;
+display: flex;
+flex-direction: column;
+}
+
+
+
+#contactMe{
+  border: 2px solid greenyellow;
+display: flex;
+color: white;
+margin-top: 5%;
+justify-content: center;
+column-gap: 20%;
+}
+
+.contactLeft{
+ border: 2px solid red;
+  max-width: 50%;
+}
+
+.contactLeft h3{
+  font-size: 1rem;
+  margin-top: 2%;
+}
+
+.contactRight{
+   max-width: 50%;
+}
+
+.contactRight form{
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* From Uiverse.io by Gaurav-WebDev */ 
+.button {
+  height: 50px;
+  width: 200px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #252525;
+  overflow: hidden;
+  border-radius: 30px;
+  color: #333;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-txt {
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #333;
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+
+.button:hover {
+  box-shadow: 1px 1px 200px #252525;
+  color: #fff;
+  border: none;
+}
+
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}
+
+
+
+
+.foot{
+ /* border: 2px solid red; */
+background-color: #0d1416;
+  color: #fff;
+  width: 100%;
+  height: 40%;
+  margin-top: 26%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border-radius: 5%;
+  padding-top: 2%;
+}
+
+.topFoot{
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1%;
+  
+}
+
+.topFoot h2{
+   font-size: 1.5rem;
+
+}
+
+.topFoot h3{
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.footInfo h3{ 
+   font-size: 1.2rem;
+   padding-top: 2%;
+}
+
+.footInfo h4{
+  font-size: 0.8rem;
+  font-weight: 100;
+  padding-top: 2%;
+
+}
+
+.footLinks{
+  /* border: 2px solid red; */
+   margin-top: 10%;
+}
+
+.footLinks h3{
+/* border: 2px solid red; */
+margin: 5% 0;
+}
+
+.lowFoot{
+ /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.footSocial{
+ /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+}
+
+.footIcons{
+ /*  border: 2px solid yellow; */
+   display: grid;
+   max-width: 100%;
+   grid-template-columns: repeat(auto,1fr);
+   grid-template-rows: repeat(auto,1fr);
+   gap: auto;
+     margin-top: 10%;
+}
+
+.footIcons a{
+ margin: 2% 0;
+ text-decoration: none;
+ color: white;
+ margin-left: 4%;
+}
+
+.lowFoot{
+  /* border: 2px solid yellow; */
+   display: flex;
+   border-top: 2px solid grey;
+   padding-top: 1%;
+
+}
+
+
+
+
+
+
 
 
 #bee {
