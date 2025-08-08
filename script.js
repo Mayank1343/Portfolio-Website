@@ -77,7 +77,7 @@ spawnBee();
 
 */
 
-
+/*
 // TYPEWRITER EFFECT
 
   var typed= new Typed(".change-text",{
@@ -87,5 +87,43 @@ spawnBee();
   loop: true,
   showCursor: false
   })
+  */
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  function setupFlipAnimationForProjectRight(container) {
+    const imagesAttr = container.getAttribute("data-images");
+    if (!imagesAttr) return;
+
+    const images = imagesAttr.split(",").map(img => img.trim());
+    const flipImages = container.querySelectorAll(".flip-image");
+
+    flipImages.forEach((img, idx) => {
+      let currentIndex = idx % images.length;
+      img.src = images[currentIndex];
+
+      setInterval(() => {
+        img.classList.add("flip");
+
+        setTimeout(() => {
+          currentIndex = (currentIndex + 1) % images.length;
+          img.src = images[currentIndex];
+          img.classList.remove("flip");
+        }, 300);
+      }, 3000 + idx * 500);
+    });
+  }
+
+  // Find all .project-right containers and initialize flip animation
+  const projectRights = document.querySelectorAll(".project-right");
+  projectRights.forEach(container => setupFlipAnimationForProjectRight(container));
+});
+
+
+
+
+
+
+
 
   
