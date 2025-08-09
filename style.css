@@ -20,9 +20,13 @@ body{
  /* border: 2px solid red; */
       text-align: center;
       height: 10%;
-      margin-top: 1%;
-      
+      margin-top: 1%; 
 }
+
+section {
+    scroll-margin-top: 10vh; /* half the viewport height */
+}
+
 
 #topnav{
    /* border: 2px solid yellow; */
@@ -181,7 +185,7 @@ align-items: center;
 .arcContainer {
   width: 100%;
   height: 100%;
-  --color: rgba(114, 114, 114, 0.6);
+  --color: rgba(154, 150, 150, 0.6);
   background-color: rgb(236, 236, 236);
   background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
       linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
@@ -213,7 +217,7 @@ align-items: center;
 
 .stick1{
    /* border: 2px solid blue; */
-  background-color: rgb(60, 184, 180);
+  background-color: rgb(62, 211, 206);
   width: 270px;
   height: 150px;
 
@@ -224,7 +228,7 @@ align-items: center;
       position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(115%, -210%) rotate(-13deg) scale(0.7);
+  transform: translate(115%, -210%) rotate(-13deg) scale(0.64);
 }
 .stick1 p{
  /*  border: 2px solid red; */
@@ -239,7 +243,7 @@ align-items: center;
 
 .stick2{
    /* border: 2px solid blue; */
-  background-color: yellow;
+  background-color: rgb(239, 222, 38);
   width: 100px;
   height: 100px;
 
@@ -250,7 +254,7 @@ align-items: center;
       position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-350%, -350%) rotate(11deg) scale(1.3);
+  transform: translate(-30%, -300%) rotate(11deg) scale(1.3);
 }
 .stick2 p{
  /*  border: 2px solid red; */
@@ -272,20 +276,21 @@ align-items: center;
   width: auto;
    position: absolute;
  border-radius: 4%;
-   transform: translate(30%, -190%) rotate(-5deg);
+   transform: translate(-320%, -200%) rotate(-10deg) scale(0.9);
 }
 
-.stick3:hover{
-transform: scale(0.98);
-}
 
 .stick4{
     display: flex;
        justify-content: center;
     text-align: center;
-    
+ animation: floatText 4s ease-in-out infinite;
 }
 
+@keyframes floatText {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
 
 .stick4 img{
   height: 60px;
@@ -293,6 +298,46 @@ transform: scale(0.98);
    position: absolute;
  border-radius: 4%;
    transform: translate(-350%, -370%) rotate(-20deg);
+}
+
+.stick5{
+    display: flex;
+       justify-content: center;
+    text-align: center;
+ animation: floatText 4s ease-in-out infinite;
+}
+
+@keyframes floatText {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.stick5 img{
+  height: 50px;
+  width: auto;
+   position: absolute;
+ border-radius: 4%;
+   transform: translate(450%, -670%) rotate(10deg);
+}
+
+.stick6{
+    display: flex;
+       justify-content: center;
+    text-align: center;
+ animation: floatText 4s ease-in-out infinite;
+}
+
+@keyframes floatText {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.stick6 img{
+  height: 50px;
+  width: auto;
+   position: absolute;
+ border-radius: 4%;
+   transform: translate(-850%, -370%) rotate(-2deg);
 }
 
 
@@ -332,12 +377,15 @@ transform: scale(0.98);
 
 .abttext h2{
  /* border: 2px solid red; */
-  font-size: 1rem;
+  font-size: 1.4rem;
   display: flex;
   max-width: 63%;
   justify-content: center;
   align-items: center;
+   font-family: "Montserrat";
+
 }
+
 
 .abttext h3{
   display: flex;
@@ -345,6 +393,7 @@ transform: scale(0.98);
   font-size: 3.5rem;
     justify-content: center;
   align-items: center;
+  /* text-shadow: 5px 5px #d23c00; */
 }
 
 
@@ -357,19 +406,50 @@ transform: scale(0.98);
 
 .aboutDesc p{
  /* border: 2px solid blue;  */
-   display: flex;
+     display: block;  /* ✅ fix wrap */
+   flex-wrap: wrap;      /* ✅ allow multiple lines */
    text-align: center;
    margin-top: 3%;
    font-size: 1.3rem;
    max-width: 70%;
 }
 
+.word {
+    position: relative;
+    display: inline-block;
+    margin-right: 0.05rem;
+    margin-bottom: 0.5rem;
+}
+
+.word .ghost {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3; /* light grey look */
+    color: #ccc;
+    pointer-events: none;
+}
+
+.word .reveal {
+    opacity: 0;
+    color: #fff;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.word.fade-in .reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 
 
 #socialProfile{
-    /*border: 2px solid yellow;*/
+  display: flex;
+    border: 2px solid #FE7743;
+    border-radius: 15px;
+    padding: 30px;
     text-align: center;
     margin: 0 300px;
     font-size: 1.7rem;
@@ -378,16 +458,33 @@ transform: scale(0.98);
     margin-top: 15%;
 }
 
-.socialnav{
- display: flex;
- justify-content: space-evenly;
+.socialnav {
+  /* border: 2px solid yellow; */
+    display: flex;
+   width: 100%;
+    justify-content: space-evenly;
+    
+  }
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* space between icon and text */
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.socialnav a{
-/*  border: 2px solid yellow;*/
- color: white;
- text-decoration: none;
+.social-link img {
+    width: auto;
+    height: 50px;
 }
+
+.social-link:hover {
+    color: white; /* hover color */
+    transform: translateY(-2px);
+}
+
 
 
 
@@ -397,17 +494,15 @@ transform: scale(0.98);
 }
 
 .section-title {
-  font-size: 50px;
-  padding-left: 11%;
-  padding-right: 100px;
+  text-align: center;
+  font-size: 3rem;
   margin-bottom: 30px;
-  margin-top: 0;
      font-family: "Media Sans Extended", sans-serif;
  /* border: 2px solid red;*/
 }
 
 #projects h4{
-  padding-left: 11%;
+    text-align: center;
   margin-top: -1%;
   font-family: "Montserrat";
     font-weight: 500;
@@ -421,10 +516,8 @@ transform: scale(0.98);
   width: 90%;
   border-radius: 20px;
 /*background: linear-gradient(to right, #5618b3, #8e2de2, #da22ff); */
-background: linear-gradient(to right, #2c1a8a, #5618b3, #4682f4);
-background: linear-gradient(to right, #5618b3, #ff416c, #ff4b2b);
-
-
+/* background: linear-gradient(to right, #2c1a8a, #5618b3, #4682f4); */
+background: linear-gradient(to right, #1a1a2e, #16213e, #0f3460);
   color: white;
   flex: 1;
   overflow-y: auto;
@@ -504,7 +597,6 @@ margin: 0;
     margin-top: 40% !important;
   object-fit: contain;
  /* border: 2px solid yellow; */
- transition: all 0.1s ease;
  animation: floatText 4s ease-in-out infinite;
 }
 
@@ -513,9 +605,7 @@ margin: 0;
   50% { transform: translateY(-5px); }
 }
 
-.project-logo img:hover{
-  transform: scale(1.1);
-}
+
 
 .techStack p{
   text-align: center;
@@ -571,10 +661,11 @@ margin: 0;
 }
 
 #certi h2{
-    font-size: 60px;
+    font-size: 3rem;
        font-family: "Media Sans Extended", sans-serif;
 }
 #certi h3{
+  margin-top: 1%;
   margin-bottom: 12%;
  font-family: "Montserrat";
     font-weight: 500;
@@ -595,7 +686,6 @@ margin: 0;
 }
 
 
-/* Base Card Style */
 .cert-card {
   width: 250px;
   height: 350px;
@@ -607,24 +697,23 @@ margin: 0;
   border-radius: 15px;
   overflow: hidden;
   padding: 0;
-  transition: all 0.3s ease;  /* for smooth hover */
+  transition: transform 0.1s ease; /* smooth rotation */
+  transform-style: preserve-3d;
+  perspective: 1000px; /* better 3D depth */
 }
 
-/* Hover Effects */
 .cert-card:hover {
-  transform: scale(1.05);
   box-shadow: 0 0 20px #31317d;
   outline: 2px solid #00e0ff;
 }
 
-/* Certificate Image */
 .cert-card img {
   width: 100%;
   height: 150px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
-  opacity: 100%;
 }
+
 
 
 
@@ -887,29 +976,5 @@ transform: scale(1.6);
 
 
 
-#bee {
-  position: fixed;
-  width: 40px;
-  z-index: 9999;
-  transition: transform 1s linear, top 1s linear, left 1s linear;
-  pointer-events: auto;
-}
-
-.bee-dead {
-  animation: fallToBottom 1.5s forwards ease-in-out;
-  pointer-events: none;
-}
-
-@keyframes fallToBottom {
-  0% {
-    opacity: 1;
-    transform: rotate(0deg);
-  }
-  100% {
-    top: 100vh;
-    opacity: 0;
-    transform: rotate(360deg);
-  }
-}
 
 
