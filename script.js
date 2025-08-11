@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
             wordElements.forEach((word, index) => {
                 setTimeout(() => {
                     word.classList.add("fade-in");
-                }, index * 80);
+                }, index * 50);
             });
         } else {
             wordElements.forEach(word => {
