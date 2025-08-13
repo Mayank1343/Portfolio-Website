@@ -13,7 +13,7 @@ body{
     font-family: Lora, sans-serif;
     width: 100%;
     height: 100vh;
-    overflow-x: hidden;
+   /* overflow-x: hidden; */
 }
 
 img {
@@ -63,16 +63,17 @@ section {
   font-size: 1.5rem;
   font-weight: 800;
   font-family: "Media Sans Extended", sans-serif;
-  margin-right: 30%;
+  margin-right: 25%;
 }
+
 
 #navName1{
     color: #FE7743;
 }
 
 #navName2{
-  
-  margin-top: -7%;
+/*  margin-top: -7%; */
+
 }
 
 .rightNav{
@@ -81,9 +82,8 @@ section {
     font-weight: 500;
     width: 50%;
     justify-content: space-between;
-      margin-right: -10%;
       padding: 0 auto;
-   
+     text-align: end;
 }
 
 .rightNav a{
@@ -169,7 +169,8 @@ align-items: center;
    /* border: 2px solid red; */
   position: relative;
   background-color: white;
-  width: 67rem;
+  width: 90%;
+  max-width: 67rem;
   height: 17rem;
   /* border-radius: 0 200px 450px 0; */
   border-radius: 100px;
@@ -409,7 +410,8 @@ align-items: center;
     border-radius: 15px;
     padding: 30px;
     text-align: center;
-    margin: 0 300px;
+      margin: 0 auto;
+  max-width: 900px;
     font-size: 1.7rem;
     color: white;
     margin-bottom: 15%;
@@ -512,7 +514,7 @@ background: linear-gradient(to right, #1a1a2e, #16213e, #0f3460);
 }
 
 .project-left h3{
- font-size: 5rem;
+font-size: clamp(2rem, 5vw, 5rem);
  margin-top: 0;
  display: flex;
  max-width: 60%;
@@ -918,7 +920,7 @@ transform: scale(1.6);
 }
 
 
-@media (max-width: 1051px) {
+@media (min-width:893px) and (max-width: 1130px) {
 
   .leftNav a{
     font-size: 1.9rem;
@@ -928,10 +930,11 @@ transform: scale(1.6);
 }
  
   #heroName1 {
-    font-size: 5rem;
-    width: auto;
+    font-size: 4.5rem;
+    width: 100%;
     margin-top: 10%;
     margin-right: 0;
+    margin-left: 2%;
   }
 
   .hero {
@@ -942,18 +945,19 @@ transform: scale(1.6);
   }
 
   .heroText {
-    width: 80%;
+    width: 100%;
     gap: 2rem;
-    margin-left: 0;
+    margin-left: 5%;
     margin-top: 3%;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .heroArc{
-  width: 57rem;
+  width: 53rem;
   height: 27rem;
   margin: 5rem 0;
+  margin-left: 3.2%;
 }
 
 .stick1{
@@ -974,6 +978,10 @@ transform: scale(1.6);
    font-size: 0.8rem;
 }
 
+.stick3 img{
+   transform: translate(-270%, -250%) rotate(-10deg) scale(0.9);
+}
+
 .stick4 img{
   height: 60px;
   width: auto;
@@ -984,6 +992,10 @@ transform: scale(1.6);
 
 .stick5 img{
    transform: translate(250%, -670%) rotate(10deg);
+}
+
+.stick6 img{
+   transform: translate(-600%, -420%) rotate(-2deg);
 }
 
 .abttext{
@@ -1011,12 +1023,20 @@ transform: scale(1.6);
 
 #projects{
  margin-top: 5rem;
+  justify-content: center;
 }
   .projects-container {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 99%;
+    margin-left: 1.8%;
+        margin-right: auto;
     height: auto;
+  }
+
+  .project-box{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin-top: 5rem;
   }
 
   .project-left h3 {
@@ -1028,6 +1048,10 @@ transform: scale(1.6);
 .project-logo a{
  /* border: 2px solid green; */
   margin-right: 10rem;
+}
+
+.project-right img{
+  margin-top: 2rem;
 }
 
 .techStack p{
@@ -1077,7 +1101,10 @@ transform: scale(1.6);
 
 
   .base{
+   /* border: 2px solid yellow; */
+   width: 100%;
   margin-top: 15rem;
+  margin-left: 1.3rem;
   }
 
   .lowFoot{
@@ -1092,8 +1119,7 @@ transform: scale(1.6);
 
 }
 
-
-@media (max-width: 818px) {
+@media (min-width:770px) and (max-width: 892px) {
 
   .leftNav a{
     font-size: 1.7rem;
@@ -1103,7 +1129,7 @@ transform: scale(1.6);
 }
  
   #heroName1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     width: auto;
     margin-top: 10%;
     margin-right: 0;
@@ -1130,7 +1156,7 @@ transform: scale(1.6);
   width: 47rem;
   height: 27rem;
   margin: 5rem 0;
-  margin-left: 4rem;
+  margin-left: 2rem;
 }
 
 .stick1{
@@ -1184,6 +1210,7 @@ transform: scale(1.6);
 .abttext h3{
   font-size: 4rem;
   text-align: center;
+  margin-left: 1.5%;
 }
 
   .aboutDesc {
@@ -1203,12 +1230,12 @@ transform: scale(1.6);
     width: 45%;
     border-radius: 15px;
     padding: 5%;
-    padding-left: 10%;
+    padding-left: 12%;
     font-size: 2rem;
     color: white;
     margin-bottom: 15%;
     margin-top: 15%;
-    margin-left: 14.5rem;
+    margin-left: 17rem;
 }
 
  .socialnav {
@@ -1223,12 +1250,13 @@ transform: scale(1.6);
  margin-top: 5rem;
  justify-content: center;
 }
+
+
   .projects-container {
-    width: 100%;
-    margin-left: 1.25rem;
-    margin-right: auto;
+    width: 99%;
+    margin-left: 1.8%;
+        margin-right: auto;
     height: auto;
-    row-gap: 5rem;
   }
 
   .project-left h3 {
@@ -1310,7 +1338,7 @@ margin-left: 1.3rem;
 
 }
 
-@media (max-width: 480px) {
+@media (min-width:730px) and (max-width: 770px) {
 
   #topnav{
        width: 100%;
@@ -1337,12 +1365,16 @@ margin-left: 1.3rem;
   font-size: 1rem;
   text-align: start;
 }
+
+.heroMain{
+/*  border: 2px solid red; */
+  margin-right: 10%;
+}
  
   #heroName1 {
     font-size: 5rem;
-    width: auto;
+    width: 100%;
     margin-top: 10%;
-    margin-left: 1rem;
     text-align: center;
   }
 
@@ -1357,19 +1389,20 @@ margin-left: 1.3rem;
   }
 
   .heroText {
-    width: 40rem;
+    /* border: 2px solid red; */
+    width: 100%;
     gap: 3rem;
-    margin-left: 1rem;
+    margin-right: 25%;
     margin-top: 10%;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .heroArc{
-  width: 37rem;
+  width: 47rem;
   height: 24rem;
   margin: 5rem 0;
-  margin-left: 0rem;
+  margin-right: 10%;
 }
 
 .stick1{
@@ -1411,8 +1444,14 @@ margin-left: 1.3rem;
    transform: translate(500%, -370%) rotate(-2deg);
 }
 
+
+#about{
+/* border: 2px solid red; */
+width: 100%;
+}
+
 .abttext{
-   margin: 7rem 0;
+   margin: 7rem 5rem 7rem 0rem;
 }
 
 .abttext h2{
@@ -1444,12 +1483,12 @@ margin-left: 1.3rem;
     width: 60%;
     border-radius: 15px;
     padding: 5%;
-    padding-left: 10%;
+    padding-left: 15%;
     font-size: 2rem;
     color: white;
     margin-bottom: 15%;
     margin-top: 15%;
-    margin-left: 11.5rem;
+    margin-left: 13.5rem;
 }
 
  .socialnav {
@@ -1465,19 +1504,19 @@ margin-left: 1.3rem;
 }
 
 #projects h2{
-margin-left: 10rem;
+margin-left: 8rem;
 
 }
 #projects h4{
-  margin-left: 10rem;
+  margin-left: 7rem;
   font-size: 1.2rem;
 }
 
   .projects-container {
      display: flex;
    flex-direction: column;
-    width: 35rem;
-    margin-left: 2.4rem;
+    width: 100%;
+    margin-left: 2.6rem;
     margin-right: auto;
     height: auto;
     row-gap: 5rem;
@@ -1536,12 +1575,12 @@ margin-left: 10rem;
   }
 
   #certi h2{
-    margin-left: 10rem;
+    margin-left: 7.5rem;
     font-size: 2.7rem;
   }
 
   #certi h3{
-    margin-left: 10rem;
+    margin-left: 8rem;
     margin-top: 1.5rem;
     font-size: 1.3rem;
   }
@@ -1549,13 +1588,12 @@ margin-left: 10rem;
   #certi-div{
       flex-direction: column;
   row-gap: 3rem;
-  margin-left: 10rem;
+  margin-left: 9rem;
   }
 
 
 #contactMe {
-
-width: 38.1rem;
+width: 100%;
 }
 
 .contactRight{
@@ -1586,6 +1624,8 @@ width: 38.1rem;
 
   .base{
   margin-top: 15rem;
+  margin-left: 5%;
+  width: 100%;
   }
 
   .lowFoot{
@@ -1606,3 +1646,913 @@ width: 38.1rem;
 }
 
 }
+
+@media (min-width: 600px) and (max-width:730px) {
+
+  #topnav{
+       width: 100%;
+       margin-left: 2rem;
+       display: flex;
+       justify-content: center;
+  }
+
+  .leftNav a{
+    font-size: 1.7rem;
+    margin-left: 1rem;
+     display: flex;
+     flex-direction: column;
+
+
+  }
+
+   .rightNav {
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+   }
+  .rightNav a{
+  font-size: 1rem;
+  text-align: start;
+}
+ 
+  #heroName1 {
+    font-size: 5rem;
+    width: auto;
+    margin-top: 10%;
+    margin-right: 10%;
+    text-align: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5rem;
+    width: 100%;
+    height: auto;
+  
+  }
+
+  .heroText {
+    width: 100%;
+    gap: 3rem;
+    margin-right: 25%;
+    margin-top: 10%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .heroArc{
+  width: 100%;
+  height: 24rem;
+  margin: 5rem 0;
+  margin-right: 5rem;
+  
+}
+
+.stick1{
+  width: 330px;
+  height: 230px;
+  transform: translate(25%, -190%) rotate(-13deg) scale(0.5);
+}
+.stick1 p{
+   font-size: 2.3rem;
+}
+
+.stick2{
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -420%) rotate(11deg) scale(1.4);
+}
+.stick2 p{
+   font-size: 0.8rem;
+}
+
+.stick3 img{
+  height: 170px;
+   transform: translate(-200%, -180%) rotate(-10deg) scale(0.9);
+}
+
+.stick4 img{
+  height: 60px;
+  width: auto;
+   position: absolute;
+ border-radius: 4%;
+   transform: translate(-100%, -370%) rotate(-20deg);
+}
+
+.stick5 img{
+   transform: translate(150%, -570%) rotate(10deg);
+}
+
+.stick6 img{
+   transform: translate(400%, -370%) rotate(-2deg);
+}
+
+.abttext{
+   margin: 7rem 0;
+}
+
+.abttext h2{
+  font-size: 1.5rem;
+  margin-left: 4.5rem;
+}
+
+.abttext h3{
+  font-size: 4rem;
+  text-align: center;
+  margin-left: 7rem;
+}
+
+  .aboutDesc {
+    width: 80%;
+    margin-left: 18%;
+    margin-top: 0.5rem;
+  }
+
+  .aboutDesc p {
+  /*  border: 2px solid green; */
+    max-width: 90%;
+    font-size: 1.3rem;
+  }
+
+  #socialProfile{
+  display: flex;
+    border: 2px solid #FE7743;
+    width: 60%;
+    border-radius: 15px;
+    padding: 5%;
+    padding-left: 15%;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 15%;
+    margin-top: 15%;
+    margin-left: 11rem;
+}
+
+ .socialnav {
+  flex-direction: column;
+  gap: 2.5rem;
+   width: 100%;
+   height: auto;
+  }
+
+#projects{
+ margin-top: 7rem;
+ justify-content: center;
+}
+
+#projects h2{
+margin-left: 5.5rem;
+
+}
+#projects h4{
+  margin-left: 6rem;
+  font-size: 1.2rem;
+}
+
+  .projects-container {
+     display: flex;
+   flex-direction: column;
+    width: 100%;
+    margin-left: 2.6rem;
+    margin-right: auto;
+    height: auto;
+    row-gap: 5rem;
+  }
+
+  .project-box{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+  }
+
+  .project-left h3 {
+    font-size: 3rem;
+    max-width: 100%;
+    line-height: 3rem;
+  }
+
+.project-logo a{
+ /* border: 2px solid green; */
+  margin-right: 10rem;
+}
+
+.techStack p{
+/*  border: 2px solid green; */
+  font-size: 1.3rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+  .techExplained p {
+    width: 100%;
+    margin-left: 0;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .project-right{
+  display: flex;
+/*  border: 2px solid blue; */
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%; 
+  margin-top: 10%;
+}
+
+
+  #certi {
+    margin: 10% auto;
+    text-align: center;
+    margin-top: 15rem;
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+  }
+
+  #certi h2{
+    margin-left: 6rem;
+    font-size: 2.7rem;
+  }
+
+  #certi h3{
+    margin-left: 6rem;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  #certi-div{
+      flex-direction: column;
+  row-gap: 3rem;
+  margin-left: 6rem;
+  }
+
+
+#contactMe {
+   border: 2px solid red; 
+ width: 100%;
+ margin-left: 2.7rem;
+
+}
+
+.contactRight{
+ justify-content: center;
+}
+
+  .baseImage img {
+    height: 0rem;
+    margin-left: 0;
+  }
+
+  .foot {
+    margin-left: 0;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .topFoot{
+   /* border: 2px solid red; */
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 0;
+    margin-left: 8rem;
+    margin-top: 5rem;
+  }
+
+
+  .base{
+  margin-top: 15rem;
+ 
+  }
+
+  .lowFoot{
+/*  border: 2px solid yellow; */
+   display: flex;
+   flex-direction: column;
+   border-top: 2px solid grey;
+   width: 100%;
+   height: 20%; 
+    margin-bottom: 0;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+.lowFoot span{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+}
+
+@media (min-width: 500px) and (max-width:600px) {
+
+  #topnav{
+       width: 100%;
+       margin-left: 2rem;
+       display: flex;
+       justify-content: center;
+  }
+
+  .leftNav a{
+    font-size: 1.7rem;
+    margin-left: 1rem;
+     display: flex;
+     flex-direction: column;
+
+
+  }
+
+   .rightNav {
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+   }
+  .rightNav a{
+  font-size: 1rem;
+  text-align: start;
+}
+ 
+  #heroName1 {
+    font-size: 4rem;
+    margin-top: 10%;
+    text-align: center;
+      margin-right: 5rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5rem;
+    width: 100%;
+    height: auto;
+  
+  }
+
+  .heroText {
+    width: 100%;
+    gap: 3rem;
+    margin-right: 25%;
+    margin-top: 10%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .heroArc{
+  width: 100%;
+  height: 24rem;
+  margin: 5rem 0;
+  margin-right: 4rem;
+  
+}
+
+.stick1{
+  width: 330px;
+  height: 230px;
+  transform: translate(10%, -190%) rotate(-13deg) scale(0.5);
+}
+.stick1 p{
+   font-size: 2.3rem;
+}
+
+.stick2{
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -420%) rotate(11deg) scale(1.4);
+}
+.stick2 p{
+   font-size: 0.8rem;
+}
+
+.stick3 img{
+  height: 170px;
+   transform: translate(-160%, -180%) rotate(-10deg) scale(0.9);
+}
+
+.stick4 img{
+  height: 60px;
+  width: auto;
+   position: absolute;
+ border-radius: 4%;
+   transform: translate(10%, -370%) rotate(-20deg);
+}
+
+.stick5 img{
+   transform: translate(240%, -440%) rotate(10deg);
+}
+
+.stick6 img{
+   transform: translate(400%, -320%) rotate(-2deg);
+}
+
+.abttext{
+   margin: 7rem 0;
+}
+
+.abttext h2{
+  font-size: 1.5rem;
+  margin-left: 4.5rem;
+}
+
+.abttext h3{
+  font-size: 4rem;
+  text-align: center;
+  margin-left: 7rem;
+}
+
+  .aboutDesc {
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 0.5rem;
+  }
+
+  .aboutDesc p {
+  /*  border: 2px solid green; */
+    max-width: 90%;
+    font-size: 1.3rem;
+  }
+
+  #socialProfile{
+  display: flex;
+    border: 2px solid #FE7743;
+    width: 60%;
+    border-radius: 15px;
+    padding: 5%;
+    padding-left: 12%;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 15%;
+    margin-top: 15%;
+    margin-left: 9.5rem;
+}
+
+ .socialnav {
+  flex-direction: column;
+  gap: 2.5rem;
+   width: 100%;
+   height: auto;
+  }
+
+#projects{
+ margin-top: 7rem;
+ justify-content: center;
+}
+
+#projects h2{
+margin-left: 5.5rem;
+
+}
+#projects h4{
+  margin-left: 6rem;
+  font-size: 1.2rem;
+}
+
+  .projects-container {
+     display: flex;
+   flex-direction: column;
+    width: 100%;
+    margin-left: 2.6rem;
+    margin-right: auto;
+    height: auto;
+    row-gap: 5rem;
+  }
+
+  .project-box{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+  }
+
+  .project-left h3 {
+    font-size: 3rem;
+    max-width: 100%;
+    line-height: 3rem;
+  }
+
+.project-logo a{
+ /* border: 2px solid green; */
+  margin-right: 10rem;
+}
+
+.techStack p{
+/*  border: 2px solid green; */
+  font-size: 1.3rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+  .techExplained p {
+    width: 100%;
+    margin-left: 0;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .project-right{
+  display: flex;
+/*  border: 2px solid blue; */
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%; 
+  margin-top: 10%;
+}
+
+
+  #certi {
+    margin: 10% auto;
+    text-align: center;
+    margin-top: 15rem;
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+  }
+
+  #certi h2{
+    margin-left: 7rem;
+    font-size: 2.7rem;
+  }
+
+  #certi h3{
+    margin-left: 7rem;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  #certi-div{
+      flex-direction: column;
+  row-gap: 3rem;
+  margin-left: 7rem;
+  }
+
+
+#contactMe {
+   border: 2px solid red; 
+ width: 100%;
+ margin-left: 2.8rem;
+
+}
+
+.contactRight{
+ justify-content: center;
+}
+
+  .baseImage img {
+    height: 0rem;
+    margin-left: 0;
+  }
+
+  .foot {
+    margin-left: 0;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .topFoot{
+   /* border: 2px solid red; */
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 0;
+    margin-left: 7rem;
+    margin-top: 5rem;
+  }
+
+
+  .base{
+  margin-top: 15rem;
+ 
+  }
+
+  .lowFoot{
+/*  border: 2px solid yellow; */
+   display: flex;
+   flex-direction: column;
+   border-top: 2px solid grey;
+   width: 100%;
+   height: 20%; 
+    margin-bottom: 0;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+.lowFoot span{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+}
+
+@media (min-width: 0px) and (max-width: 499px) {
+
+  .head{
+    width: 35rem;
+  }
+
+  #topnav{
+   /* border: 2px solid yellow; */
+       width: 100%;
+       margin-left: 2rem;
+       display: flex;
+       justify-content: center;
+  }
+
+  .leftNav a{
+    font-size: 1.7rem;
+    margin-left: 1rem;
+     display: flex;
+     flex-direction: column;
+
+
+  }
+
+   .rightNav {
+    /* border: 2px solid red; */
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     margin-left: 0%;
+   }
+  .rightNav a{
+  font-size: 1rem;
+  text-align: start;
+}
+ 
+  #heroName1 {
+    font-size: 5rem;
+    width: auto;
+    margin-top: 10%;
+    margin-left: 6rem;
+    text-align: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5rem;
+    width: 100%;
+    height: auto;
+  
+  }
+
+  .heroText {
+    width: 100%;
+    gap: 3rem;
+    margin-left: 5rem;
+    margin-top: 10%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .heroArc{
+  width: 37rem;
+  height: 24rem;
+  margin: 5rem 0;
+  margin-left: 6rem;
+}
+
+.stick1{
+  width: 330px;
+  height: 230px;
+  transform: translate(50%, -190%) rotate(-13deg) scale(0.5);
+}
+.stick1 p{
+   font-size: 2.3rem;
+}
+
+.stick2{
+  width: 100px;
+  height: 100px;
+  transform: translate(50%, -420%) rotate(11deg) scale(1.4);
+}
+.stick2 p{
+   font-size: 0.8rem;
+}
+
+.stick3 img{
+  height: 170px;
+   transform: translate(-110%, -180%) rotate(-10deg) scale(0.9);
+}
+
+.stick4 img{
+  height: 60px;
+  width: auto;
+   position: absolute;
+ border-radius: 4%;
+   transform: translate(80%, -370%) rotate(-20deg);
+}
+
+.stick5 img{
+   transform: translate(300%, -550%) rotate(10deg);
+}
+
+.stick6 img{
+   transform: translate(500%, -370%) rotate(-2deg);
+}
+
+.abttext{
+   margin: 7rem 0;
+}
+
+.abttext h2{
+  font-size: 1.5rem;
+  margin-left: 5rem;
+}
+
+.abttext h3{
+  font-size: 4rem;
+  text-align: center;
+  margin-left: 15rem;
+}
+
+  .aboutDesc {
+    width: 100%;
+    margin-left: 33%;
+    margin-top: 0.5rem;
+  }
+
+  .aboutDesc p {
+  /*  border: 2px solid green; */
+    max-width: 90%;
+    font-size: 1.3rem;
+  }
+
+  #socialProfile{
+  display: flex;
+    border: 2px solid #FE7743;
+    width: 70%;
+    border-radius: 15px;
+    padding: 20%;
+    padding-left: 10%;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 15%;
+    margin-top: 15%;
+    margin-left: 12.5rem;
+}
+
+ .socialnav {
+  flex-direction: column;
+  gap: 2.5rem;
+   width: 100%;
+   height: auto;
+  }
+
+#projects{
+ margin-top: 7rem;
+ justify-content: center;
+}
+
+#projects h2{
+margin-left: 12rem;
+
+}
+#projects h4{
+  width: 100%;
+  margin-left: 9.5rem;
+  font-size: 1.2rem;
+}
+
+  .projects-container {
+     display: flex;
+   flex-direction: column;
+    width: 35rem;
+    margin-left: 2.7rem;
+    margin-right: auto;
+    height: auto;
+    row-gap: 5rem;
+  }
+
+  .project-box{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+  }
+
+  .project-left h3 {
+    font-size: 3rem;
+    max-width: 100%;
+    line-height: 3rem;
+  }
+
+.project-logo a{
+ /* border: 2px solid green; */
+  margin-right: 10rem;
+}
+
+.techStack p{
+/*  border: 2px solid green; */
+  font-size: 1.3rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+  .techExplained p {
+    width: 100%;
+    margin-left: 0;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .project-right{
+  display: flex;
+/*  border: 2px solid blue; */
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%; 
+  margin-top: 10%;
+}
+
+
+  #certi {
+    margin: 10% auto;
+    text-align: center;
+    margin-top: 15rem;
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+  }
+
+  #certi h2{
+    margin-left: 17rem;
+    font-size: 2.7rem;
+  }
+
+  #certi h3{
+    width: 100%;
+    margin-left: 17rem;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  #certi-div{
+      flex-direction: column;
+  row-gap: 3rem;
+  margin-left: 17rem;
+  }
+
+
+#contactMe {
+/* border: 2px solid red; */
+width: 40rem;
+}
+
+.contactRight{
+ justify-content: center;
+}
+
+  .baseImage img {
+    height: 0rem;
+    margin-left: 0;
+  }
+
+  .foot {
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .topFoot{
+   /* border: 2px solid red; */
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 0;
+    margin-left: 17rem;
+    margin-top: 5rem;
+  }
+
+
+  .base{
+  margin-top: 15rem;
+  }
+
+  .lowFoot{
+/*  border: 2px solid yellow; */
+   display: flex;
+   flex-direction: column;
+   border-top: 2px solid grey;
+   width: 100%;
+   height: 20%; 
+    margin-bottom: 0;
+    margin-left: 17rem;
+    margin-top: 2rem;
+}
+
+.lowFoot span{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+}
+
+
