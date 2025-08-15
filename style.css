@@ -238,9 +238,10 @@ width: 100%;
    text-transform: uppercase;
    letter-spacing: -1.2px;
    color: #000;
-   width: 70%;
-   height: 70%;
+   width: 80%;
+   height: 90%;
    align-items: center;
+   font-size: 1.2rem;
 }
 
 
@@ -625,7 +626,7 @@ margin: 0;
   /* border: 2px solid yellow;*/
     text-align: center;
     margin:5% 0%;
-    padding: 0 10%;
+    padding: 0 1%;
     color: white;
     width: 100%;
     box-sizing: border-box;
@@ -644,7 +645,7 @@ margin: 0;
 
 #certi-div{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;  
      flex-wrap: wrap; 
      gap: 20px;
@@ -915,6 +916,7 @@ transform: scale(1.01);
   display: flex;
   justify-content: center;
   align-items: end;
+  margin-bottom: 5%;
 }
 
 .footSocial{
@@ -977,10 +979,27 @@ transform: scale(1.6);
 .stick2 p {
   font-size: 1.01rem;
 }
+ .topFoot {
+    justify-content: center;
+    gap: 20px; 
+  }
 
 }
 
 @media (max-width:868px){
+
+      .aboutIntro h2{
+   font-size: 1rem;
+  }
+
+   .aboutIntro h3{
+   font-size: 3rem;
+  }
+
+  .aboutDesc p{
+    font-size: 1rem;
+  }
+
   .stick1{
   transform: translate(-130%, -35%) rotate(-13deg) scale(0.6);
 }
@@ -1031,7 +1050,7 @@ transform: scale(1.6);
   }
 
   .abttext h3{
-  font-size: 2.8rem;
+  font-size: 2.5rem;
 }
  
 .stick1{
@@ -1069,7 +1088,6 @@ transform: scale(1.6);
 
 }
 
-
 @media (max-width: 668px) {
   #topnav {
     flex-direction: column;
@@ -1085,6 +1103,10 @@ transform: scale(1.6);
    #heroName1{
     font-size: 4rem;
   }
+
+   .abttext h3{
+  font-size: 2.3rem;
+}
 
   #socialProfile{
   display: flex;
@@ -1118,6 +1140,61 @@ transform: scale(1.6);
  font-size: 1rem;
 flex-wrap: wrap;
 }
+
+#projects{
+ margin-top: 7rem;
+ justify-content: center;
+}
+
+
+  .projects-container {
+     display: flex;
+   flex-direction: column;
+  }
+
+  .project-box{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+  }
+
+  .project-left h3 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+
+.techStack p{
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+  .techExplained p {
+    margin-left: 0;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .project-right{
+  display: flex;
+/*  border: 2px solid blue; */
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%; 
+  margin-top: 10%;
+}
+
+.project-logo img{
+/*  border: 2px solid yellow; */
+  width: 40px !important;
+  height: 40px !important;
+  margin-left: 200% !important;
+    margin-top: 200% !important;
+}
+
+
 
 #certi h2{
   margin-top: 15%;
@@ -1163,6 +1240,25 @@ flex-wrap: wrap;
 }
 
 @media (max-width:610px){
+
+  .socialnav {
+   width: 65%;
+        row-gap: 1.5rem;
+        font-size: 1.6rem;
+  }
+
+    .aboutIntro h2{
+   font-size: 1rem;
+  }
+
+   .aboutIntro h3{
+   font-size: 1.7rem;
+  }
+
+  .aboutDesc p{
+    font-size: 1rem;
+  }
+
   .stick1{
   transform: translate(-90%, -55%) rotate(-13deg) scale(0.45);
 }
@@ -1194,6 +1290,68 @@ flex-wrap: wrap;
 .stick6 img{
    transform: translate(-70%, -100%) rotate(-2deg);
 }
+
+.project-head h3{
+margin: 0;
+  padding: 0;
+  line-height: 2.5rem;
+  font-size: 3rem;
+}
+
+.project-left p{
+  font-size: 1rem;
+}
+
+.project-right{
+  display: flex;
+/*  border: 2px solid blue; */
+  width: 35%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.flip-image {
+/*  border: 2px solid blue; */
+  width: 300px;
+  height: 170px;
+}
+
+
+ .topFoot {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .topFoot h2{
+   font-size: 1rem;
+}
+
+.topFoot h3{
+  font-size: 0.8rem;
+}
+
+.footInfo h2{
+    font-family: "Media Sans Extended", sans-serif;
+    font-size: 1rem;
+}
+.footInfo h3{ 
+   font-size: 1rem;
+   padding-top: 2%;
+}
+
+.footInfo h4{
+  font-size: 0.6rem;
+  font-weight: 100;
+  padding-top: 3%;
+}
+
+.footPages h2{
+    font-family: "Media Sans Extended", sans-serif;
+     font-size: 1rem;
+}
+
 }
 
 @media (max-width: 530px) {
@@ -1210,6 +1368,12 @@ flex-wrap: wrap;
 
    #heroName1{
     font-size: 3rem;
+  }
+
+.socialnav {
+   width: 65%;
+        row-gap: 1.5rem;
+        font-size: 1.4rem;
   }
 
   .section-title {
@@ -1264,6 +1428,13 @@ flex-wrap: wrap;
 }
 
 @media (max-width:504px){
+
+.socialnav {
+   width: 60%;
+        row-gap: 1.5rem;
+        font-size: 1.3rem;
+  }
+
 .stick1{
   transform: translate(-90%, -55%) rotate(-13deg) scale(0.45);
 }
@@ -1298,6 +1469,14 @@ flex-wrap: wrap;
 }
 
 @media (max-width:460px){
+
+
+  .socialnav {
+   width: 75%;
+        row-gap: 1.5rem;
+        font-size: 1.3rem;
+  }
+
 .stick1{
   transform: translate(-70%, -55%) rotate(-13deg) scale(0.45);
 }
@@ -1329,9 +1508,42 @@ flex-wrap: wrap;
 .stick6 img{
    transform: translate(-100%, -150%) rotate(-2deg);
 }
+
+.project-head h3{
+  line-height: 2rem;
+  font-size: 2rem;
+}
+
+
+.project-right{
+  display: flex;
+/*  border: 2px solid blue; */
+  width: 35%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.project-logo img{
+/*  border: 2px solid yellow; */
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: 200% !important;
+    margin-top: 200% !important;
+}
+
+
 }
 
 @media (max-width: 400px) {
+
+  .socialnav {
+   width: 90%;
+        row-gap: 1.5rem;
+        font-size: 1.2rem;
+  }
+
   #topnav {
     flex-direction: column;
     align-items: center;
@@ -1343,8 +1555,24 @@ flex-wrap: wrap;
     gap: 1rem;
   }
 
+  .rightNav a {
+  font-size: 0.8rem;
+}
+
    #heroName1{
     font-size: 2.5rem;
+  }
+
+   .aboutIntro h2{
+   font-size: 0.9rem;
+  }
+
+   .aboutIntro h3{
+   font-size: 1.5rem;
+  }
+
+  .aboutDesc p{
+    font-size: 0.9rem;
   }
 
   .section-title {
@@ -1396,6 +1624,44 @@ flex-wrap: wrap;
    transform: translate(-100%, -150%) rotate(-2deg);
 }
 
+ .topFoot {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .topFoot h2{
+   font-size: 0.8rem;
+}
+
+.topFoot h3{
+  font-size: 0.6rem;
+}
+
+.footInfo h2{
+    font-family: "Media Sans Extended", sans-serif;
+    font-size: 0.8rem;
+}
+.footInfo h3{ 
+   font-size: 0.8rem;
+   padding-top: 2%;
+}
+
+.footInfo h4{
+  font-size: 0.5rem;
+  font-weight: 100;
+  padding-top: 3%;
+}
+
+.footPages h2{
+    font-family: "Media Sans Extended", sans-serif;
+     font-size: 0.8rem;
+}
+
+.footIcons a{
+ transform: scale(1);  
+}
+
+
 }
 
 @media (max-width: 340px) {
@@ -1410,20 +1676,24 @@ flex-wrap: wrap;
     gap: 1rem;
   }
 
+  .rightNav a {
+  font-size: 0.7rem;
+}
+
    #heroName1{
     font-size: 2rem;
   }
 
   .aboutIntro h2{
-   font-size: 1rem;
+   font-size: 0.7rem;
   }
 
    .aboutIntro h3{
-   font-size: 2rem;
+   font-size: 1.3rem;
   }
 
   .aboutDesc p{
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 
   .section-title {
@@ -1471,6 +1741,11 @@ flex-wrap: wrap;
 }
 
 @media (max-width:303px){
+
+  .rightNav a {
+  font-size: 0.6rem;
+}
+
   .stick1{
   transform: translate(-70%, -55%) rotate(-13deg) scale(0);
 }
