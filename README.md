@@ -1,55 +1,47 @@
-✨ Features
-🚀 Project Image Flip
+# Interactive Web Animations
 
-Automatic flipping images in .project-right sections.
+A sleek, interactive web UI with **dynamic project images, scroll-based text reveal, and 3D tilting cards**. Perfect for portfolios or personal projects to make your webpage feel alive.
 
-Supports multiple images via data-images attribute.
+---
 
-Staggered timing for smooth, continuous animation.
+## ✨ Features
 
-👀 Reveal Text on Scroll
+### 🚀 Project Image Flip
+- Automatic flipping images in `.project-right` sections  
+- Supports multiple images via `data-images` attribute  
+- Staggered timing for smooth, continuous animation  
 
-Paragraph text in .aboutDesc reveals word by word when scrolled into view.
+### 👀 Reveal Text on Scroll
+- Paragraph text in `.aboutDesc` reveals word by word when scrolled into view  
+- Words reset when scrolling away for repeated animations  
 
-Words reset when scrolling away for repeated animations.
+### 🃏 3D Tilt Certificate Cards
+- `.cert-card` elements tilt based on mouse movement  
+- Adds depth and interactive scaling effect  
+- Smooth reset on mouse leave  
 
-🃏 3D Tilt Certificate Cards
+---
 
-.cert-card elements tilt based on mouse movement.
-
-Adds depth and interactive scaling effect.
-
-Smooth reset on mouse leave.
-
-💻 Usage
-
-Clone or download the repo.
-
-Add your .project-right images:
-
+## 💻 Usage
+1. Clone or download the repo  
+2. Add your `.project-right` images:
 <div class="project-right" data-images="img1.jpg, img2.jpg, img3.jpg">
   <img class="flip-image" src="" alt="Project Image">
 </div>
 
+3. Wrap paragraph text in .aboutDesc for scroll reveal
+4. Add .cert-card elements to enable 3D tilt effect
+5. Open index.html in a browser
 
-Wrap paragraph text in .aboutDesc for scroll reveal.
+## ⚡ Tech Stack
 
-Add .cert-card elements to enable 3D tilt effect.
+- HTML
+- CSS (Animations & Transforms)
+- JavaScript (DOM, Events, Intervals)
+  
 
-Open index.html in a browser.
+## 🎯 Why This Project
 
-⚡ Tech Stack
-
-HTML
-
-CSS (Animations & Transforms)
-
-JavaScript (DOM, Events, Intervals)
-
-🎯 Why This Project
-
-Makes your portfolio visually engaging.
-
-Demonstrates smooth, modern UI interactions.
-
-Lightweight, no heavy libraries required.
+* Makes your portfolio visually engaging
+* Demonstrates smooth, modern UI interactions
+* Lightweight, no heavy libraries required
